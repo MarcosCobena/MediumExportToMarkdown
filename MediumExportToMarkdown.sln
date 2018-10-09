@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediumExportToMarkdown", "MediumExportToMarkdown\MediumExportToMarkdown.csproj", "{63CF42E9-9041-427F-82DA-45F4E096CE18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFound.HtmlToMarkdown", "HtmlToMarkDown\BFound.HtmlToMarkdown\BFound.HtmlToMarkdown.csproj", "{D792F4FF-3D5C-4007-B48B-0E1A5B3F8A23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{63CF42E9-9041-427F-82DA-45F4E096CE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63CF42E9-9041-427F-82DA-45F4E096CE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63CF42E9-9041-427F-82DA-45F4E096CE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D792F4FF-3D5C-4007-B48B-0E1A5B3F8A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D792F4FF-3D5C-4007-B48B-0E1A5B3F8A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D792F4FF-3D5C-4007-B48B-0E1A5B3F8A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D792F4FF-3D5C-4007-B48B-0E1A5B3F8A23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

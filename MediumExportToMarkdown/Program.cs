@@ -2,8 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using ReverseMarkdown;
-using static ReverseMarkdown.Config;
+using BFound.HtmlToMarkdown;
 
 namespace MediumExportToMarkdown
 {
@@ -14,7 +13,7 @@ namespace MediumExportToMarkdown
         const string ImportMessage = 
             "*(This post was imported, please [contact](#/contact) me if there's anything wrong with it. " +
             "Thanks in advance)*";
-        const string OutputPath = "/Users/marcos/Repositorios/MediumExportToMarkdown/MediumExportToMarkdown"; //marcoscobena/items";
+        const string OutputPath = "/Users/marcos/Repositorios/marcoscobena/items";
 
         static void Main(string[] args)
         {
@@ -31,10 +30,7 @@ namespace MediumExportToMarkdown
                 var date = DateTime.Parse(rawDate);
 
                 var content = File.ReadAllText(item);
-                var config = new Config(UnknownTagsOption.PassThrough);
-                var markdownConverter = new Converter(config);
-                var body = Extract("body", content);
-                var markdown = markdownConverter.Convert(content);
+                var markdown = MarkDownDocument.FromHtml(content);
 
                 var title = Extract("title", content);
 
@@ -42,7 +38,7 @@ namespace MediumExportToMarkdown
 
                 File.WriteAllText($"{OutputPath}{Path.DirectorySeparatorChar}{fileName}.md", markdown);
 
-                Console.WriteLine($"addPost(\"{title}\", \"{fileName}\", \"{date.ToShortDateString()}\");");
+                Console.WriteLine($"addPost(\"{title}\", \"{fileName}\", \"{date.ToString("dd-MM-yy")}\");");
             }
         }
 

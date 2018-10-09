@@ -8,4 +8,12 @@
   <ItemGroup>
     <PackageReference Include="ReverseMarkdown" Version="2.1.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BFound.HtmlToMarkdown">
+      <HintPath>..\HtmlToMarkDown\BFound.HtmlToMarkdown\bin\Debug\BFound.HtmlToMarkdown.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\HtmlToMarkDown\BFound.HtmlToMarkdown\bin\Debug\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

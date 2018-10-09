@@ -1,0 +1,3 @@
+[submodule "HtmlToMarkDown"]
+	path = HtmlToMarkDown
+	url = git@github.com:ZA1/HtmlToMarkDown.git
